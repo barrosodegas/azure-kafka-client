@@ -47,7 +47,7 @@ public class FunctionConsumer {
 				e.printStackTrace();
 	            return request.createResponseBuilder(HttpStatus.INTERNAL_SERVER_ERROR).body("\n\nConsumer error: " + e.getMessage() + "\n").build();
 			}
-            return request.createResponseBuilder(HttpStatus.OK).body("\nHi, " + name + "!\n\nExecutou os consumers!!!\n").build();
+            return request.createResponseBuilder(HttpStatus.OK).body("\nHi, " + name + "!\n\nConsumers finalized!!!\n").build();
         }
     }
 }
